@@ -32,7 +32,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS '" + TABLE_NAME + "'");
 
         String CREATE_STUDENT_TABLE = "CREATE TABLE " + TABLE_NAME + "("
-                + EMPID + " TEXT," + FNAME + " TEXT,"
+                + EMPID + " INTEGER," + FNAME + " TEXT,"
                 + LNAME + " TEXT" + ")";
         db.execSQL(CREATE_STUDENT_TABLE);
 
